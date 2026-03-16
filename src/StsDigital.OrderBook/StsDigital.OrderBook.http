@@ -1,0 +1,5 @@
+@host = http://localhost:5107
+
+### Get merged order book
+GET {{host}}/orderbook
+Accept: application/json

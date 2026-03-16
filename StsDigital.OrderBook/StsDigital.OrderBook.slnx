@@ -1,4 +1,0 @@
-<Solution>
-  <Project Path="StsDigital.OrderBook.Tests/StsDigital.OrderBook.Tests.csproj" />
-  <Project Path="StsDigital.OrderBook/StsDigital.OrderBook.csproj" />
-</Solution>
