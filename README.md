@@ -42,5 +42,6 @@ dotnet test StsDigital.OrderBook.slnx
 * There should be a validation that the stale eviction timeout is not less then the frequency of the messages received(from the slowes exchange), as there would be a high risk of snapshot eviction from a slower exchange client.
 * There is no real validation for the provided symbol, just for its format. Also there should be validation for supported symbols per exchange, as some exchanges may not provide information for certain symbols.
 * Missing some other important tests coverage for message parser and websocket connection/reconnection client base.
+* The timestamp for the snapshot is generated at the time of the message parsing to have a unified approach accross all exchanges, even though Bitstamp provides a timestamp which could be used.
 
 There were of course other considerations during this exercise, but I hope sharing some of them would help.
